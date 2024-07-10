@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="mouse">Soy un ratón</div>
+    <div class="mouse">Soy un ratón</div>
+    <div class="mouse">Soy un ratón</div>
+
+    <script>
+
+        const mouseTags = document.querySelectorAll('.mouse')
+
+        // style property (setter)
+        mouseTags.forEach((eachTag) => {
+            eachTag.style.background = 'red'
+            eachTag.innerHTML = '...ahora somos rojos :3'
+        })
+
+    </script>
+
+</body>
+
+</html>

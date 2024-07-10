@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="message">Soy el contenido <strong>inicial</strong> jeje :)</div>
+
+    <script>
+
+        let messageTag = document.querySelector('#message')
+
+        // getter
+        console.log('El HTML interno de la etiqueta es:', messageTag.innerHTML)
+
+        // setter
+        messageTag.innerHTML = '<h1>Esto es <em>inyectado</em> mediante el script</h1>'
+
+    </script>
+
+</body>
+
+</html>
